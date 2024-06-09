@@ -7,7 +7,7 @@ This Chrome extension allows you to highlight and annotate text on web pages.
 ## Usage Instructions
 
 - **To highlight text:** Press `Alt + Shift + N`
-- **To delete a highlight:** Click on the highlighted text
+- **To delete a highlight:** Click on the highlighted text and press `Alt+shift+D`
 
 ## Features
 
