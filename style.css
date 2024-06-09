@@ -1,0 +1,92 @@
+/* .highlight {
+  background-color: yellow;
+} */
+
+.active {
+  border: 2px dashed grey;
+}
+.main{
+  height: 15px;
+  width: 7vw;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.3vw 0;
+  border-radius: 0.4vw;
+  cursor: pointer;
+
+}
+/* the div that has the highlighter colors*/
+.main2{ 
+  height: 1vw;
+  width: 12vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: skyblue;
+  
+  cursor: pointer;
+  padding: 0.2vw 0;
+}
+.hover-option-button{
+  height: 0.8vw;
+  width: 0.8vw;
+  border-radius: 50%;
+  background-color: red;
+}
+.hover-option-button:hover{
+  transform: scale(1.2);
+} 
+
+
+.hover-option-button-hover:hover{
+  transform: scale(1.2);
+}
+ /* css for the note add area */
+.hover-textarea {
+  width: 150px;
+  height: 50px;
+  resize: none;
+ background-color: white;
+  border: 1px solid #ccc;
+  
+  z-index: 1000;
+}
+
+
+.confirmation-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-message {
+  margin-bottom: 10px;
+}
+
+.confirmation-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirm-button, .cancel-button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}

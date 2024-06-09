@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "web annotations",
+  "version": "1.0",
+  "description": "A Chrome extension for text highlights and annotations on web pages",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "contextMenus",
+    "webNavigation"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/logo192.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["html2pdf.js","contents.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "host_permissions": ["<all_urls>"],
+  "commands": {
+    "toggle_highlight": {
+      "suggested_key": {
+        "default": "Alt+Shift+N",
+        "mac": "Command+Shift+N"
+      },
+      "description": "To Highlight the selected text"
+    },
+    
+    
+    "clear_highlights": {
+      "suggested_key": {
+        "default": "Alt+Shift+D",
+        "mac": "Command+Shift+D"
+      },
+      "description": "Delete selected highlight"
+    }
+  }
+}
