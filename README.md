@@ -38,6 +38,3 @@ This Chrome extension allows you to highlight and annotate text on web pages.
 
 Contributions are welcome! Feel free to submit a pull request or open an issue to discuss what you would like to change.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
